@@ -1,6 +1,6 @@
 {
   "name": "sails-mongo",
-  "version": "0.10.4",
+  "version": "0.11.5",
   "description": "Mongo DB adapter for Sails.js",
   "main": "./lib/adapter.js",
   "scripts": {
@@ -28,6 +28,10 @@
     {
       "name": "Ted Kulp",
       "email": "github@wishy.org"
+    },
+    {
+      "name": "Andy Pham",
+      "email": "andyphamhung@gmail.com"
     }
   ],
   "license": "MIT",
@@ -37,11 +41,12 @@
     "url": "git://github.com/balderdashy/sails-mongo.git"
   },
   "dependencies": {
-    "async": "~0.8.0",
-    "lodash": "~2.4.1",
-    "mongodb": "1.4.4",
-    "waterline-errors": "~0.10.0",
-    "waterline-cursor": "~0.0.5"
+    "async": "~1.4.2",
+    "lodash": "~3.10.0",
+    "mongodb": "^2.0.42",
+    "validator": "^4.1.0",
+    "waterline-cursor": "~0.0.6",
+    "waterline-errors": "~0.10.0"
   },
   "devDependencies": {
     "mocha": "*",
@@ -54,6 +59,9 @@
       "semantic",
       "queryable",
       "associations"
+    ],
+    "features": [
+      "cross-adapter"
     ]
   }
 }
